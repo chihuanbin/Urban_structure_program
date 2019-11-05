@@ -46,7 +46,7 @@ if __name__ == "__main__":
 
     ################这里
     MinPts = int(data.shape[0] / 100)
-    eps = 500
+    eps = 100
 
     db = DBSCAN(eps=eps, min_samples=MinPts, metric=haversine).fit(data)#metric计算特征向量之间的距离
 
